@@ -1,0 +1,9 @@
+[Unit]
+Description=First run script
+After=network.online
+
+[Service]
+ExecStart=systemctl start ssh
+
+[Install]
+WantedBy=multi-user.target
